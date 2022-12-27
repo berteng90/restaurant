@@ -6,9 +6,25 @@ html, body{
 header{
     display: flex;
     flex-flow: row nowrap;
-    margin:auto;
+    width:auto;
+    justify-content: center;
 }
 
 h1{
-    font-size: 50px;
+    font-size: 25px;
+    margin: 10px;
+}
+
+.nav{
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.wrapper{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+p{
+    font-size: 20px;
 }
