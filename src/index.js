@@ -1,7 +1,15 @@
 function component(){
+    const header=document.createElement('header');
+    const home=document.createElement('h1');
+    const menu=document.createElement('h1');
+    const contact=document.createElement('h1');
+    header.appendChild(home);
+    header.appendChild(menu);
+    header.appendChild(menu);
+
     const content=document.createElement('div');
-    document.body.appendChild(content);
+   
     console.log("test");
-    return content;
+    return [header, content];
 }
-component();
+document.body.appendChild(component());

@@ -1,0 +1,14 @@
+html, body{
+    margin: auto;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    flex-flow: row nowrap;
+    margin:auto;
+}
+
+h1{
+    font-size: 50px;
+}
