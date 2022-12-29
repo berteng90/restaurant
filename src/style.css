@@ -22,9 +22,17 @@ h1{
 
 .wrapper{
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    width: auto;
 }
 
 p{
     font-size: 20px;
+}
+
+img{
+    width: 200px;
+    height: 200px;
 }

@@ -1,5 +1,5 @@
-require('./style.css');
-
+import './style.css';
+import img01 from './img/burger01.png';
 function component(){
     const header=document.createElement('header');
     const div=document.createElement('div');
@@ -15,14 +15,17 @@ function component(){
     div.appendChild(contact);
     const content=document.createElement('div');
     content.classList.add('wrapper')
+    const info=document.createElement('div');
+    content.appendChild(info);
     document.body.appendChild(header);
     document.body.appendChild(content);
     header.appendChild(div);
     const par1=document.createElement('p');
-    const img1=document.createElement('img');
-    par1.textContent="Best Fried Chicken in Town!";
-    content.appendChild(par1);
-    content.appendChild(img1);
+   const image01=new Image();
+   image01.src=img01
+    par1.textContent="Best Burgers in Town!";
+    info.appendChild(par1);
+    info.appendChild(image01);
 
 }
 
