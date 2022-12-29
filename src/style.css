@@ -28,6 +28,13 @@ h1{
     width: auto;
 }
 
+.info{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
 p{
     font-size: 20px;
 }

@@ -16,6 +16,7 @@ function component(){
     const content=document.createElement('div');
     content.classList.add('wrapper')
     const info=document.createElement('div');
+    info.classList.add('info')
     content.appendChild(info);
     document.body.appendChild(header);
     document.body.appendChild(content);
