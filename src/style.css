@@ -80,7 +80,7 @@ h1 {
   flex-flow: column wrap;
   width: 1fr;
   height: 500px;
-  padding: 150px 150px 0px;
+  padding: 100px 150px 100px;
 }
 .nav > img {
   width: 200px;
