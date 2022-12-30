@@ -3,10 +3,11 @@ import img01 from './img/burger01.png';
 import logo from './img/logo.png';
 
 function component(){
+
+    //Header & Navigation
     const header=document.createElement('header');
     const div=document.createElement('div');
     div.classList.add('nav');
-   
     const home=document.createElement('h1');
     home.textContent='HOME';
     const menu=document.createElement('h1');
@@ -19,6 +20,8 @@ function component(){
     div.appendChild(home);
     div.appendChild(menu);
     div.appendChild(contact);
+
+    //Content
     const content=document.createElement('div');
     content.classList.add('wrapper')
     const info=document.createElement('div');
@@ -40,6 +43,14 @@ function component(){
     left_box.appendChild(par1)
     right_box.appendChild(image01)
 
+    //Footer
+
+    const foot=document.createElement('footer');
+    document.body.appendChild(foot);
+    const par2=document.createElement('p');
+    par2.textContent='All Rights Reserved ©'
+    foot.appendChild(par2);
+    
 }
 
 component();

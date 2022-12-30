@@ -27,7 +27,7 @@ html, body{
     background-color:#fafafa;
 }
 
-header{
+header,footer{
     display: flex;
     flex-flow: row nowrap;
     width:auto;
@@ -77,11 +77,11 @@ h1{
     flex-flow: column wrap;
     width: 1fr;
     height: 500px;
-    padding: 20px 150px 0px;
+    padding: 150px 150px 0px;
 
 }
 .nav>img{
-    width: 150px;
+    width: 200px;
     height: 150px;
 }
 
