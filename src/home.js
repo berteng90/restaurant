@@ -17,8 +17,6 @@ export function generateHome() {
   const image01 = new Image();
   image01.src = img01;
   par1.textContent = "Best Burgers in Town!";
-  left_box.appwendChild(par1);
+  left_box.appendChild(par1);
   right_box.appendChild(image01);
-
-  //Footer
 }
