@@ -2,6 +2,7 @@ import img01 from "./img/burger01.png";
 
 export function generateHome() {
   const cont = document.querySelector(".wrapper");
+  cont.innerHTML = "";
   const info = document.createElement("div");
   info.classList.add("info");
   const par1 = document.createElement("p");

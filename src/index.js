@@ -9,20 +9,33 @@ function generateDom() {
   div.classList.add("nav");
   const home = document.createElement("h1");
   home.textContent = "HOME";
+  home.classList.add("home");
   const menu = document.createElement("h1");
   menu.textContent = "MENU";
-  const contact = document.createElement("h1");
-  contact.textContent = "ABOUT";
+  menu.classList.add("menu");
+  const about = document.createElement("h1");
+  about.textContent = "ABOUT";
+  about.classList.add("about");
   const blogo = new Image();
   blogo.src = logo;
   div.appendChild(blogo);
   div.appendChild(home);
   div.appendChild(menu);
-  div.appendChild(contact);
-  console.log(div.childNodes);
+  div.appendChild(about);
+
   div.childNodes.forEach((Node) => {
     Node.addEventListener("click", () => {
-      console.log("Hello");
+      switch (Node.className) {
+        case "home":
+          generateHome();
+          break;
+        case "menu":
+          generateMenu();
+          break;
+        case "about":
+          generateAbout();
+          break;
+      }
     });
   });
   document.body.appendChild(header);
