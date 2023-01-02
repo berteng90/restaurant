@@ -59,6 +59,11 @@ h1 {
   padding: 1em;
 }
 
+.nav > *:hover {
+  cursor: pointer;
+  color: #fafafa;
+}
+
 .wrapper {
   display: flex;
   flex-flow: row nowrap;

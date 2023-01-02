@@ -19,8 +19,19 @@ function generateDom() {
   div.appendChild(home);
   div.appendChild(menu);
   div.appendChild(contact);
+  console.log(div.childNodes);
+  div.childNodes.forEach((Node) => {
+    Node.addEventListener("click", () => {
+      console.log("Hello");
+    });
+  });
   document.body.appendChild(header);
   header.appendChild(div);
+
+  //Generate Content
+  const content = document.createElement("div");
+  content.classList.add("wrapper");
+  document.body.appendChild(content);
 
   //Generate content based on page selected
   generateHome();
